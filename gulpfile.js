@@ -80,7 +80,8 @@ gulp.task('compass', function() {
     }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest(dest.css))
-    .pipe(size());
+    .pipe(size())
+    .pipe(reload({stream:true}));
 });
 
 // JAVASCRIPT
@@ -108,7 +109,7 @@ gulp.task('img', function () {
 });
 
 // DEFAULT
-gulp.task('default', ['compass', 'js', 'img', 'browser-sync'], function(){
+gulp.task('default', ['browser-sync', 'compass', 'js', 'img'], function(){
   gulp.watch(paths.scss, ['compass']);
   gulp.watch(paths.js, ['js']);
   gulp.watch(paths.images, ['img']);

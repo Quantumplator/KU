@@ -1,0 +1,63 @@
+// Selectors from wordpress.org:
+// body.login {}
+// body.login div#login {}
+// body.login div#login h1 {}
+// body.login div#login h1 a {}
+// body.login div#login form#loginform {}
+// body.login div#login form#loginform p {}
+// body.login div#login form#loginform p label {}
+// body.login div#login form#loginform input {}
+// body.login div#login form#loginform input#user_login {}
+// body.login div#login form#loginform input#user_pass {}
+// body.login div#login form#loginform p.forgetmenot {}
+// body.login div#login form#loginform p.forgetmenot input#rememberme {}
+// body.login div#login form#loginform p.submit {}
+// body.login div#login form#loginform p.submit input#wp-submit {}
+// body.login div#login p#nav {}
+// body.login div#login p#nav a {}
+// body.login div#login p#backtoblog {}
+// body.login div#login p#backtoblog a {}
+
+
+body.login {
+  background: $color__background-theme;
+  color: white;
+}
+body.login div#login {}
+body.login div#login h1 {}
+body.login div#login h1 a {}
+body.login div#login form#loginform {}
+body.login div#login form#loginform p {}
+body.login div#login form#loginform p label {}
+body.login div#login form#loginform input {}
+body.login div#login form#loginform input#user_login {}
+body.login div#login form#loginform input#user_pass {}
+body.login div#login form#loginform p.forgetmenot {}
+body.login div#login form#loginform p.forgetmenot input#rememberme {}
+body.login div#login form#loginform p.submit {}
+body.login div#login form#loginform p.submit input#wp-submit {}
+body.login div#login p#nav {}
+body.login div#login p#nav a {}
+body.login div#login p#backtoblog {}
+body.login div#login p#backtoblog a {}
+
+.login h1 a {
+  background-image: url('');
+  background-image: none, url('');
+  background-size: 80px 80px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: #999;
+  height: 80px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0 auto 25px;
+  padding: 0;
+  text-decoration: none;
+  width: 80px;
+  text-indent: -9999px;
+  outline: none;
+  overflow: hidden;
+  display: block;
+}

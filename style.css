@@ -468,6 +468,32 @@ textarea {
   width: 100%;
 }
 
+body.login {
+  background: #D2B48C;
+  color: white;
+}
+
+.login h1 a {
+  background-image: url("");
+  background-image: none, url("");
+  background-size: 80px 80px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: #999;
+  height: 80px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.3em;
+  margin: 0 auto 25px;
+  padding: 0;
+  text-decoration: none;
+  width: 80px;
+  text-indent: -9999px;
+  outline: none;
+  overflow: hidden;
+  display: block;
+}
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
