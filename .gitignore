@@ -1,0 +1,8 @@
+.DS_Store
+.sass-cache
+.tmp
+node_modules
+notes
+img
+**/img/*
+**/images/*
