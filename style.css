@@ -473,7 +473,7 @@ body.login {
   color: white;
 }
 
-.login h1 a {
+body.login h1 a {
   background-image: url("");
   background-image: none, url("");
   background-size: 80px 80px;
