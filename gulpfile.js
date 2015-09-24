@@ -18,6 +18,7 @@ var gulp       = require('gulp'),
 // paths to resources
 var paths = {
   scss: 'src/scss/style.scss',
+  partials: 'src/scss/**/*.scss',
   scripts: 'src/js/**/*.js',
   main: 'src/js/main.js',
   images: 'src/img/**/*',
@@ -110,7 +111,7 @@ gulp.task('img', function () {
 
 // DEFAULT
 gulp.task('default', ['browser-sync', 'compass', 'js', 'img'], function(){
-  gulp.watch(paths.scss, ['compass']);
+  gulp.watch(paths.partials, ['compass']);
   gulp.watch(paths.js, ['js']);
   gulp.watch(paths.images, ['img']);
 });

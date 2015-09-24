@@ -44,3 +44,4 @@ require get_template_directory() . '/inc/jetpack.php';
  * Customize Login Screen
  */
 require get_template_directory() . '/inc/login.php';
+

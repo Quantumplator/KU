@@ -1,0 +1,29 @@
+@include keyframes(slideOutLeftWithBounce) {
+	0% {
+  	@include transform(translateX(0));
+    @include transform(translateY(1000px));
+  }
+  10% {
+    @include transform(translateY(800px));
+  }
+  30% {
+    @include transform(translateY(800px));
+  }
+  50% {
+    @include transform(translateX(0));
+  }
+	100% {
+    @include transform(translateX(-2000px));
+    @include transform(translateY(0));
+  }
+}
+
+@mixin slideOutLeftWithBounce($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(slideOutLeft);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}

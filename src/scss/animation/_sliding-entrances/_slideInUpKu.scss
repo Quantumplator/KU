@@ -1,0 +1,21 @@
+@include keyframes(slideInUpKu) {
+	0% {
+  	@include transform(translateY(100vh));
+  }
+  5% {
+    @include transform(translateY(80vh));
+  }
+	100% {
+  	@include transform(translateY(0));
+  }
+}
+
+@mixin slideInUpKu($count: $countDefault, $duration: $durationDefault, $delay: $delayDefault, $function: $functionDefault, $fill: $fillDefault, $visibility: $visibilityDefault) {
+  @include animation-name(slideInUpKu);
+  @include count($count);
+  @include duration($duration);
+  @include delay($delay);
+  @include function($function);
+  @include fill-mode($fill);
+  @include visibility($visibility);
+}
