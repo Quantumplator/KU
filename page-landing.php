@@ -15,27 +15,27 @@ get_header(); ?>
       <div class="ku-below">
         <img 
           class="ambassador zombneck"
-          src="http://studio-ku.com/wp-content/themes/studioku/img/ambassador-zomb-neck.png" 
+          src="<?php echo get_stylesheet_directory_uri(); ?>/img/ambassador/ambassador-zomb-neck.png" 
           alt="Ambassador Zomb Neck" 
           title="#studioku">
         <img 
           class="ambassador zombjacket"
-          src="http://studio-ku.com/wp-content/themes/studioku/img/ambassador-zomb-jacket.png" 
+          src="<?php echo get_stylesheet_directory_uri(); ?>/img/ambassador/ambassador-zomb-jacket.png" 
           alt="Ambassador Zomb Jacket" 
           title="#studioku">
         <img 
           class="ambassador zombhead"
-          src="http://studio-ku.com/wp-content/themes/studioku/img/ambassador-zomb-head.png" 
+          src="<?php echo get_stylesheet_directory_uri(); ?>/img/ambassador/ambassador-zomb-head.png" 
           alt="Ambassador Zomb Head" 
           title="#studioku">
         <img 
           class="ambassador zombeye"
-          src="http://studio-ku.com/wp-content/themes/studioku/img/ambassador-zomb-eye.png" 
+          src="<?php echo get_stylesheet_directory_uri(); ?>/img/ambassador/ambassador-zomb-eye.png" 
           alt="Ambassador Zomb Eye" 
           title="#studioku">
         <img 
           class="ambassador zombmouth"
-          src="http://studio-ku.com/wp-content/themes/studioku/img/ambassador-zomb-mouth.png" 
+          src="<?php echo get_stylesheet_directory_uri(); ?>/img/ambassador/ambassador-zomb-mouth.png" 
           alt="Ambassador Zomb Mouth" 
           title="#studioku">
       </div>
