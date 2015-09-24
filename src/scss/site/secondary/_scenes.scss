@@ -1,0 +1,110 @@
+
+/* 
+ * Ambassador Ku
+ * original landing page circa ~ 2015
+ */
+
+.page-template-page-landing {
+  background-color: #eee;
+  position: relative;
+  height: 100vh;                        // Look up best practices for this. Fallback?
+  color: rgba(0,0,0,0.05);
+  .site-header {
+    position: absolute;
+    background-color: transparent;
+    width: 10%;
+    h1, h2,
+    .main-navigation {
+      font-size: 16 / 2;
+      margin-bottom: 0;
+    }
+    .site-title {
+
+    }
+    .site-description {
+      text-indent: 1em;
+    }
+  }
+
+  .ku-above,
+  .ku-below {
+    background-repeat: no-repeat;
+  }
+
+  .ku-above {
+    z-index: 0;
+    background-image: url("img/ambassador-flag.png");
+    background-position: center top;
+    background-color: #fff;
+    background-color: transparent;
+    background-size: contain;
+  }
+  .ku-below {
+    position: relative;
+    height: 100%;
+    z-index: 1;
+  }
+  .ambassador {
+    position: absolute;
+    right: 0;
+    @include slideOutLeftWithBounce(
+      $duration: 60s,
+      $count: 1,
+      $delay: 10s,
+      $function: ease-in-out, 
+      $fill: both
+    );
+  }
+  .zombeye {
+    @include rubberBandEye(
+      $duration: 50s,
+      $count: infinite,
+      $delay: 2s,
+      $function: ease-out, 
+      $fill: both
+    );
+  }
+  .zombmouth {
+    @include rubberBandMouth(
+      $duration: 60s,
+      $count: infinite,
+      $delay: 2s,
+      $function: ease-out, 
+      $fill: both
+    );
+  }
+  .zombhead {
+    @include rubberBandHead(
+      $duration: 5s,
+      $count: infinite,
+      $delay: 2s,
+      $function: ease-in-out, 
+      $fill: both
+    );
+  }
+  .zombneck {
+    @include rubberBandHead(
+      $duration: 5s,
+      $count: infinite,
+      $delay: 2s,
+      $function: ease-in-out, 
+      $fill: both
+    );
+  }
+  .zombjacket {
+    @include pulse(
+      $duration: 5s,
+      $count: infinite,
+      $delay: .2s,
+      $function: ease-out,
+      $fill: both
+    );
+  }
+  .site-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 16 / 5;
+    background-color: #000;
+  }
+}

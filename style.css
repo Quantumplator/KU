@@ -3242,6 +3242,167 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+# Scenes
+--------------------------------------------------------------*/
+/* 
+ * Ambassador Ku
+ * original landing page circa ~ 2015
+ */
+.page-template-page-landing {
+  background-color: #eee;
+  position: relative;
+  height: 100vh;
+  color: rgba(0, 0, 0, 0.05);
+}
+.page-template-page-landing .site-header {
+  position: absolute;
+  background-color: transparent;
+  width: 10%;
+}
+.page-template-page-landing .site-header h1, .page-template-page-landing .site-header h2,
+.page-template-page-landing .site-header .main-navigation {
+  font-size: 16 / 2;
+  margin-bottom: 0;
+}
+.page-template-page-landing .site-header .site-description {
+  text-indent: 1em;
+}
+.page-template-page-landing .ku-above,
+.page-template-page-landing .ku-below {
+  background-repeat: no-repeat;
+}
+.page-template-page-landing .ku-above {
+  z-index: 0;
+  background-image: url("img/ambassador-flag.png");
+  background-position: center top;
+  background-color: #fff;
+  background-color: transparent;
+  background-size: contain;
+}
+.page-template-page-landing .ku-below {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+.page-template-page-landing .ambassador {
+  position: absolute;
+  right: 0;
+  -webkit-animation-name: slideOutLeft;
+  animation-name: slideOutLeft;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
+  -webkit-animation-delay: 10s;
+  animation-delay: 10s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.page-template-page-landing .zombeye {
+  -webkit-animation-name: rubberBandEye;
+  animation-name: rubberBandEye;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 50s;
+  animation-duration: 50s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.page-template-page-landing .zombmouth {
+  -webkit-animation-name: rubberBandMouth;
+  animation-name: rubberBandMouth;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 60s;
+  animation-duration: 60s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.page-template-page-landing .zombhead {
+  -webkit-animation-name: rubberBandHead;
+  animation-name: rubberBandHead;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.page-template-page-landing .zombneck {
+  -webkit-animation-name: rubberBandHead;
+  animation-name: rubberBandHead;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.page-template-page-landing .zombjacket {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.page-template-page-landing .site-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 16 / 5;
+  background-color: #000;
+}
+
+/*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
