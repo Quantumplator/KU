@@ -2,7 +2,7 @@
   "name": "studioku",
   "version": "0.0.1",
   "description": "A custom WP Theme for Studio-Ku.com",
-  "main": "index.js",
+  "main": "main.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Quantumplator/KU.git"
@@ -20,6 +20,7 @@
     "browser-sync": "^2.9.4",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
+    "gulp-bower": "0.0.10",
     "gulp-compass": "^2.1.0",
     "gulp-concat": "^2.6.0",
     "gulp-if": "^1.2.5",

@@ -2,6 +2,7 @@ var gulp       = require('gulp'),
   browserSync  = require('browser-sync'),
   pngquant     = require('imagemin-pngquant'),
   autoprefixer = require('gulp-autoprefixer'),
+  bower        = require('gulp-bower'),
   compass      = require('gulp-compass'),
   concat       = require('gulp-concat'),
   gulpif       = require('gulp-if'),
@@ -17,22 +18,23 @@ var gulp       = require('gulp'),
 
 // paths to resources
 var paths = {
-  scss: 'src/scss/style.scss',
-  partials: 'src/scss/**/*.scss',
-  scripts: 'src/js/**/*.js',
-  main: 'src/js/main.js',
-  images: 'src/img/**/*',
-  php: '**/*.php',
-  css: '**/*.css',
-  js: 'js/**/*.js'
+  bower: './bower_components',
+  scss: './src/scss/style.scss',
+  partials: './src/scss/**/*.scss',
+  scripts: './src/js/**/*.js',
+  main: './src/js/main.js',
+  images: './src/img/**/*',
+  php: './**/*.php',
+  css: './**/*.css',
+  js: './js/**/*.js'
 }
 
 // destinations for resources
 var dest = {
   css: '',
   php: '',
-  scripts: 'js',
-  images: 'img'
+  scripts: './js',
+  images: './img'
 }
 
 // environment variables
@@ -52,6 +54,25 @@ if (env==='development') {
 } else {
   sassStyle = 'compressed';
 }
+
+
+
+// DEVELOPERS! USE THIS to install bower devDependencies if you get your fork on
+// * not included in default task
+gulp.task('bower', function() { 
+  return bower()
+    .pipe(gulp.dest(paths.bower)) 
+});
+
+// DEVELOPERS! USE THIS to add Font Awesome to your fonts folder
+// * not included in default task
+gulp.task('fawesome', function() { 
+  return gulp.src(paths.bower + '/font-awesome/fonts/**.*') 
+    .pipe(gulp.dest('./fonts')); 
+});
+
+
+
 
 // BROWSER-SYNC
 gulp.task('browser-sync', function() {
@@ -76,8 +97,13 @@ gulp.task('compass', function() {
     .pipe(compass({
       style: sassStyle,
       css: '',
-      sass: 'src/scss',
-      image: 'img'
+      sass: './src/scss',
+      image: 'img',
+      font: 'fonts',
+      loadPath: [
+        './src/scss',
+        paths.bower + '/fontawesome/scss'
+      ]
     }))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest(dest.css))

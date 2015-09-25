@@ -64,18 +64,14 @@ function _ku_setup() {
    * See https://developer.wordpress.org/themes/functionality/post-formats/
    */
   add_theme_support( 'post-formats', array(
-    'aside',
-    'image',
-    'video',
-    'quote',
-    'link',
+    'aside'
   ) );
 
   // Set up the WordPress core custom background feature.
-  add_theme_support( 'custom-background', apply_filters( '_ku_custom_background_args', array(
-    'default-color' => 'ffffff',
-    'default-image' => '',
-  ) ) );
+  // add_theme_support( 'custom-background', apply_filters( '_ku_custom_background_args', array(
+  //   'default-color' => 'ffffff',
+  //   'default-image' => '',
+  // ) ) );
 }
 endif; // _ku_setup
 add_action( 'after_setup_theme', '_ku_setup' );

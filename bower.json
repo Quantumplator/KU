@@ -1,0 +1,23 @@
+{
+  "name": "studioku",
+  "version": "0.0.1",
+  "homepage": "https://github.com/quantumplator/KU",
+  "authors": [
+    "Dylan J Harris <dylansbook@gmail.com>"
+  ],
+  "description": "A custom WP Theme for Studio-Ku.com",
+  "main": "main.js",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "font-awesome": "fontawesome#~4.4.0"
+  }
+}
