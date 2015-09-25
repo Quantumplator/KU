@@ -5887,7 +5887,7 @@ a:hover, a:active {
  * original landing page circa ~ 2015
  */
 .page-template-page-landing {
-  background-color: #fff;
+  background-color: #eee;
   position: relative;
   height: 100vh;
   color: rgba(0, 0, 0, 0.05);
