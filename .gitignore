@@ -3,6 +3,4 @@
 .tmp
 node_modules
 notes
-img
-**/img/*
-**/images/*
+src/img
