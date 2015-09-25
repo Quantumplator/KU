@@ -2907,7 +2907,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Open Sans";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5;
@@ -2915,6 +2915,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+  font-family: "Philosopher";
 }
 
 p {
@@ -5894,12 +5895,14 @@ a:hover, a:active {
 .page-template-page-landing .site-header {
   position: absolute;
   background-color: transparent;
-  width: 10%;
 }
 .page-template-page-landing .site-header h1, .page-template-page-landing .site-header h2,
 .page-template-page-landing .site-header .main-navigation {
   font-size: 16 / 2;
   margin-bottom: 0;
+}
+.page-template-page-landing .site-header .site-title {
+  margin-top: 0;
 }
 .page-template-page-landing .site-header .site-description {
   text-indent: 1em;
@@ -6033,9 +6036,9 @@ a:hover, a:active {
 }
 .page-template-page-landing .site-footer {
   position: absolute;
-  bottom: 0;
   width: 100%;
-  font-size: 16 / 5;
+  font-size: 8px;
+  font-size: 0.5rem;
   background-color: #000;
 }
 

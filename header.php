@@ -39,7 +39,4 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-
-				<i class="fa fa-hand-spock-o"></i>
-
 	<div id="content" class="site-content">

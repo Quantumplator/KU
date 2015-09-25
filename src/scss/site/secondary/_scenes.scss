@@ -12,14 +12,13 @@
   .site-header {
     position: absolute;
     background-color: transparent;
-    width: 10%;
     h1, h2,
     .main-navigation {
       font-size: 16 / 2;
       margin-bottom: 0;
     }
     .site-title {
-
+      margin-top: 0;
     }
     .site-description {
       text-indent: 1em;
@@ -102,9 +101,8 @@
   }
   .site-footer {
     position: absolute;
-    bottom: 0;
     width: 100%;
-    font-size: 16 / 5;
+    @include font-size(.5);
     background-color: #000;
   }
 }
