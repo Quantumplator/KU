@@ -4,11 +4,16 @@
  * original landing page circa ~ 2015
  */
 
+
+
 .page-template-page-landing {
   background-color: #eee;
   position: relative;
   height: 100vh;                        // Look up best practices for this. Fallback?
   color: rgba(0,0,0,0.05);
+  #masthead { // This puts the site navigation on top of all the fancy graphics
+    z-index: 1000;
+  }
   .site-header {
     position: absolute;
     background-color: transparent;
