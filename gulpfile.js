@@ -18,23 +18,23 @@ var gulp       = require('gulp'),
 
 // paths to resources
 var paths = {
-  bower: './bower_components',
-  scss: './src/scss/style.scss',
-  partials: './src/scss/**/*.scss',
-  scripts: './src/js/**/*.js',
-  main: './src/js/main.js',
-  images: './src/img/**/*',
-  php: './**/*.php',
-  css: './**/*.css',
-  js: './js/**/*.js'
+  bower: 'bower_components',
+  scss: 'src/scss/style.scss',
+  partials: 'src/scss/**/*.scss',
+  scripts: 'src/js/**/*.js',
+  main: 'src/js/main.js',
+  images: 'src/img/**/*',
+  php: '**/*.php',
+  css: '**/*.css',
+  js: 'js/**/*.js'
 }
 
 // destinations for resources
 var dest = {
   css: '',
   php: '',
-  scripts: './js',
-  images: './img'
+  scripts: 'js',
+  images: 'img'
 }
 
 // environment variables
