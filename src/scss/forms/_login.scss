@@ -5,9 +5,12 @@
 }
 
 
-#login {
+#login { // This is the container div for the form
+  font-family: "Permanent Marker";
   width: 100%;
   height: 100vh;
+  margin: 0;
+  padding-left: 2em;
   background:
     url(http://studio-ku.com/wp-content/themes/studioku/img/ambassador-zomb-mouth.png) bottom right no-repeat,
     url(http://studio-ku.com/wp-content/themes/studioku/img/ambassador-zomb-eye.png) bottom right no-repeat,
@@ -17,9 +20,15 @@
   background-size: contain;
   background-color: $color__background-theme;
   color: #000;
-  a:link, a:hover, a:active, a:visited {
+  a {
     color: #000;
-    text-decoration: none;
+    &:link, &:hover, &:active, &:visited {
+      @include transition(all 0.3s ease-in-out);
+      text-decoration: none;
+    }
+    &:hover, &:active {
+      color: #fff;
+    }
   }
   h1 {
     margin: 0;
@@ -42,9 +51,224 @@
         font-size: 128px;
         line-height: 128px;
       }
+      &:focus {
+        @include box-shadow(0 0 0 1px #5b9dd9, 0 0 2px 1px rgba(30, 140, 190, .8));
+        color: #ddd;
+      }
+    }
+    .ie8 a:focus {
+      outline: #000 solid 1px;
     }
   }
+  #login_error,
+  .message {
+    max-width: 420px;
+  }
+  #backtoblog:after {
+    @include font-size(.8);
+    content: "All Rights Reserved. Copyright 2015 Dylan J Harris";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    padding: 3em 0 0 0;
+    margin: 3em 0 0 0;
+  }
+  input.button {
+    @include border-radius(0);
+    @include box-shadow(none);
+    @include text-shadow(none);
+    margin: 0;
+    border: 0; border-color: transparent;
+    padding: 0;
+    background: transparent;
+    font-family: inherit;
+    cursor: pointer;
+    float: left;
+    clear: left;
+    text-indent: -9999px;
+  }
+  form {
+    overflow: hidden;
+    p {
+      margin-bottom: 0;
+    }
+  }
+  #nav,
+  #backtoblog,
+  .forgetmenot {
+    @include font-size(.8);
+  }
+  .forgetmenot {
+    font-weight: normal;
+    float: left;
+    clear: left;
+    margin-bottom: 0;
+  }
 }
+
+
+// .login #nav,
+// .login #backtoblog {
+//   font-size: 13px;
+//   padding: 0 24px 0;
+// }
+
+// .login #nav {
+//   margin: 24px 0 0 0;
+// }
+
+// #backtoblog {
+//   margin: 16px 0 0 0;
+// }
+
+// .login #nav a,
+// .login #backtoblog a {
+//   text-decoration: none;
+//   color: #999;
+// }
+
+// .login #nav a:hover,
+// .login #backtoblog a:hover,
+// .login h1 a:hover {
+//   color: #00a0d2;
+// }
+
+// .login #nav a:focus,
+// .login #backtoblog a:focus,
+// .login h1 a:focus {
+//   color: #124964;
+// }
+
+// .login form .input,
+// .login input[type="text"] {
+//   font-size: 24px;
+//   width: 100%;
+//   padding: 3px;
+//   margin: 2px 6px 16px 0;
+// }
+
+// .login form .input,
+// .login input[type="text"],
+// .login form input[type="checkbox"] {
+//   background: #fbfbfb;
+// }
+
+// .ie7 .login form .input,
+// .ie8 .login form .input {
+//   font-family: sans-serif;
+// }
+
+// .login-action-rp input[type="text"] {
+//   -webkit-box-shadow: none;
+//   box-shadow: none;
+//   margin: 0;
+// }
+
+// .login #pass-strength-result {
+//   font-weight: 600;
+//   margin: -1px 5px 16px 0;
+//   padding: 6px 5px;
+//   text-align: center;
+//   width: 100%;
+// }
+
+// .mobile #login {
+//   padding: 20px 0;
+// }
+
+// .mobile #login form,
+// .mobile #login .message,
+// .mobile #login_error {
+//   margin-left: 0;
+// }
+
+// .mobile #login #nav,
+// .mobile #login #backtoblog {
+//   margin-left: 8px;
+// }
+
+// body.interim-login {
+//   height: auto;
+// }
+
+// .interim-login #login {
+//   padding: 0;
+//   margin: 5px auto 20px;
+// }
+
+// .interim-login.login h1 a {
+//   width: auto;
+// }
+
+// .interim-login #login_error,
+// .interim-login.login .message {
+//   margin: 0 0 16px;
+// }
+
+// .interim-login.login form {
+//   margin: 0;
+// }
+
+// @-ms-viewport {
+//   width: device-width;
+// }
+
+// @media screen and ( max-width: 782px ) {
+//   .interim-login input[type=checkbox] {
+//     height: 16px;
+//     width: 16px;
+//   }
+
+//   .interim-login input[type=checkbox]:checked:before {
+//     width: 16px;
+//     font: normal 21px/1 'dashicons';
+//     margin: -3px 0 0 -4px;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -41,7 +41,7 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
- * Customize Login Screen
+ * Customize Login Screen & Restrict Admin Access
  */
 require get_template_directory() . '/inc/login.php';
 
